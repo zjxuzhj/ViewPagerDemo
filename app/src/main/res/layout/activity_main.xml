@@ -1,17 +1,47 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="zhj.viewpagerdemo.MainActivity">
+    android:orientation="vertical">
 
-    <android.support.v4.view.ViewPager
-        android:id="@+id/vp"
+    <zhj.viewpagerdemo.view.NoScrollViewPager
+        android:id="@+id/vp_main"
         android:layout_width="match_parent"
-        android:layout_height="match_parent" >
-    </android.support.v4.view.ViewPager>
-</RelativeLayout>
+        android:layout_height="wrap_content"
+        android:layout_weight="1"/>
+
+    <RadioGroup
+        android:id="@+id/rg_group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="5dp">
+
+        <RadioButton
+            android:id="@+id/rb_home"
+            style="@style/BottomTabStyle"
+            android:checked="true"
+            android:drawableBottom="@drawable/btn_tab_home_selector"/>
+
+        <RadioButton
+            android:id="@+id/rb_news"
+            style="@style/BottomTabStyle"
+            android:drawableBottom="@drawable/btn_tab_news_selector"/>
+
+        <RadioButton
+            android:id="@+id/rb_service"
+            style="@style/BottomTabStyle"
+            android:drawableBottom="@drawable/btn_tab_service_selector"/>
+
+        <RadioButton
+            android:id="@+id/rb_gov"
+            style="@style/BottomTabStyle"
+            android:drawableBottom="@drawable/btn_tab_gov_selector"/>
+
+        <RadioButton
+            android:id="@+id/rb_setting"
+            style="@style/BottomTabStyle"
+            android:drawableBottom="@drawable/btn_tab_setting_selector"/>
+    </RadioGroup>
+</LinearLayout>
