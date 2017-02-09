@@ -1,0 +1,18 @@
+[
+    {
+        "merged": "E:\\software\\Android\\WorkSpace\\ViewPagerDemo\\viewPagerLibrary\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\vpi__tab_text_color_indicator.xml",
+        "source": "E:\\software\\Android\\WorkSpace\\ViewPagerDemo\\viewPagerLibrary\\build\\intermediates\\bundles\\debug\\res\\drawable\\vpi__tab_text_color_indicator.xml"
+    },
+    {
+        "merged": "E:\\software\\Android\\WorkSpace\\ViewPagerDemo\\viewPagerLibrary\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\btn_tab_text_selector.xml",
+        "source": "E:\\software\\Android\\WorkSpace\\ViewPagerDemo\\viewPagerLibrary\\build\\intermediates\\bundles\\debug\\res\\drawable\\btn_tab_text_selector.xml"
+    },
+    {
+        "merged": "E:\\software\\Android\\WorkSpace\\ViewPagerDemo\\viewPagerLibrary\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\vpi__tab_indicator.xml",
+        "source": "E:\\software\\Android\\WorkSpace\\ViewPagerDemo\\viewPagerLibrary\\build\\intermediates\\bundles\\debug\\res\\drawable\\vpi__tab_indicator.xml"
+    },
+    {
+        "merged": "E:\\software\\Android\\WorkSpace\\ViewPagerDemo\\viewPagerLibrary\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\news_tab_item_bg_select.9.png",
+        "source": "E:\\software\\Android\\WorkSpace\\ViewPagerDemo\\viewPagerLibrary\\build\\intermediates\\bundles\\debug\\res\\drawable\\news_tab_item_bg_select.9.png"
+    }
+]
