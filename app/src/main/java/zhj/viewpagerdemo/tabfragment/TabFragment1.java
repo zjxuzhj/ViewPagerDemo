@@ -28,15 +28,13 @@ public class TabFragment1 extends Fragment {
     private List<String> mDatas;
     private ArrayList<ImageView> imageList;
 
-
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.tab_fragment1, container, false);
         mRecyclerView = (RecyclerView) view.findViewById(R.id.recycle);
         mRecyclerView.setLayoutManager(new LinearLayoutManager(getActivity(), LinearLayoutManager.VERTICAL, false));
-
-        initdata();
+        initdata();//初始化数据
         mRecyclerView.setAdapter(new MyAdapter(mDatas));
         return view;
     }
@@ -98,10 +96,9 @@ public class TabFragment1 extends Fragment {
                 ((MyHeadViewHolder) holder).indicator.setSnap(true);
             }
             if (holder instanceof MyBodyViewHolder) {
-                ((MyBodyViewHolder) holder).tv.setText(mDatas.get(position));
+                ((MyBodyViewHolder) holder).tv.setText(mDatas.get(position-1));
             }
         }
-
 
         @Override
         public int getItemCount() {
@@ -141,6 +138,7 @@ public class TabFragment1 extends Fragment {
         }
     }
 
+    //viewpager的adapter
     class MyPagerAdapter extends PagerAdapter {
 
         @Override

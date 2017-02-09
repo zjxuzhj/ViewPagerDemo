@@ -47,6 +47,7 @@ public class Fragment1 extends Fragment {
         return view;
     }
 
+    //初始化数据
     private void initdata() {
         fragments=new ArrayList<Fragment>();
         fragments.add(new TabFragment1());
