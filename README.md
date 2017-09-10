@@ -5,7 +5,7 @@
 ![效果展示](http://upload-images.jianshu.io/upload_images/1877523-e272b9221121a6f0.gif?imageMogr2/auto-orient/strip)
 
  
-###涉及知识点
+### 涉及知识点
 --- 
 1. 最基础的viewpager编写可以参看这篇[超简单ViewPager控件实现Demo](http://www.jianshu.com/p/04c635fec2f0)
 1. tablayout+viewpager实现的过程可以参看这篇[Material Design学习：TabLayout+Viewpager制作一个标签页](http://www.jianshu.com/p/51f3a17df49d)
@@ -13,12 +13,12 @@
 1. viewpager需要添加为recycleview的头布局才能在recycleview上滑的时候上滑，但是recycleview没有添加头布局方法，具体的实现是通过加载不同item的方式。
 可以参看我写的[RecycleView加载不同类型的Item](http://www.jianshu.com/p/05dd0315ef41)
  
-####页面分析
+#### 页面分析
 
 ![页面分析](http://upload-images.jianshu.io/upload_images/1877523-6c221790d79bf57f.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
  
-####实现思路
+#### 实现思路
 ---
 1. 外层的viewpager页面，通过点击页面底部的RadioButton来进行页面切换（禁止此viewpager响应滑动事件），配合fragment实现。
 2. 中间层的viewpager页面，通过和tablayout绑定，配合fragment，实现顶部页签。
@@ -29,7 +29,7 @@ compile 'com.android.support:cardview-v7:24.2.0'
 compile 'com.android.support:recyclerview-v7:24.2.0'
 viewpagerindicator开源库可以从我的项目中下载
 
-####1. 外层viewpager的布局实现
+#### 1. 外层viewpager的布局实现
 --- 
 - 布局代码实现
 ```
@@ -106,7 +106,7 @@ public class NoScrollViewPager extends ViewPager {
 }
 ```
 
-####2. 外层viewpager的代码实现
+#### 2. 外层viewpager的代码实现
 ---
 ```
 public class MainActivity extends AppCompatActivity {
@@ -185,7 +185,7 @@ public class MyFragmentPagerAdapter extends FragmentPagerAdapter{
 ```
 里面的几个fragment都是简单布局，就不贴了。主要讲解下fragment1，因为它里面包含着另外两个viewpager。
  
-####3. 中间层的viewpager的布局实现
+#### 3. 中间层的viewpager的布局实现
 ---
 - 一个简单的tablayout配合viewpager使用，对tablayout的样式做了设定。
 
@@ -220,7 +220,7 @@ public class MyFragmentPagerAdapter extends FragmentPagerAdapter{
  
 </LinearLayout>
 ```
-####4. 中间层的viewpager的代码实现
+#### 4. 中间层的viewpager的代码实现
 ---
 ```
 public class Fragment1 extends Fragment {
@@ -295,7 +295,7 @@ public class MyTabFragmentPagerAdapter extends FragmentPagerAdapter {
 }
 ```
 
-####5. 顶层的viewpager的实现
+#### 5. 顶层的viewpager的实现
 ---
 - 在布局只是在fragment中放入一个recycleview，而轮播的viewpager是作为头布局加入recycleview中的。
 
